@@ -20,8 +20,8 @@ use App\Http\Controllers\DashboardController;
 
 
 
+Route::get('/', [AuthController::class, 'login'])->name('auth.login');
 Route::get('/register', [AuthController::class, 'register'])->name('auth.register');
-Route::get('/login', [AuthController::class, 'login'])->name('auth.login');
 Route::post('/auth/prosesregister', [AuthController::class, 'prosesregister'])->name('auth.prosesregister');
 Route::post('/auth/proseslogin', [AuthController::class, 'proseslogin'])->name('auth.proseslogin');
 

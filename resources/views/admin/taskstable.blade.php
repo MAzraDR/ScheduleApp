@@ -12,6 +12,7 @@
                 <table class="table table-hover" id="myTable">
                     <thead>
                         <tr>
+                            <th scope="col">User ID</th>
                             <th scope="col">Title</th>
                             <th scope="col">Description</th>
                             <th scope="col">Day</th>
@@ -24,6 +25,7 @@
                     <tbody>
                         @foreach ($tasks as $task)
                         <tr>
+                            <td>{{ $task->user_id }}</td>
                             <td>{{ $task->judul }}</td>
                             <td>{{ $task->deskripsi }}</td>
                             <td>{{ $task->hari }}</td>
